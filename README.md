@@ -1,4 +1,4 @@
 # HuazeLiu.github.io
 
-theme: jekyll-theme-Architect
+Fuck HTML and CSS
 
