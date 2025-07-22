@@ -42,7 +42,7 @@
           Hi! I am a rising Senior undergraduate student at <a href="https://www.hmc.edu/">Harvey Mudd College</a> majoring in Computer Science and Mathematics, with a social science concentration in Economics.
         </p>
         <p>
-          I am a full-stack robotics engineer working on robot designing, algorithm development, and policy training. I'm mostly interested in how autonomous system percieves and navigates in the real world. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> at Engineering Department
+          I am a full-stack robotics engineer working on robot designing, algorithm development, and policy training. I'm mostly interested in how autonomous system percieves and navigates in the real world robustly and safely. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> at Engineering Department
           on foundation models and sensor fusion for trustworthy autonomous vehicle navigation. In the summer of 2025, I am going to work on humanoid robot catching and robotics co-design with <a href="https://scholar.google.com/citations?user=VW03_RgAAAAJ&hl=en">Kehlani Fay</a> under the supervision of
           <a href="https://cseweb.ucsd.edu/~haosu/">Prof. Hao Su</a> and <a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a> at UC San Diego. (P.S.: I'm still building this website. Hopefully I can get it done later this September. If you have any suggestions, feel free to email me!)
         </p>
@@ -72,7 +72,11 @@
               <td style="padding:10px;width:70%;vertical-align:top;">
                 <papertitle><strong>Question 1: What is the most effective and scalable path to truly robust autonomous navigation?</strong></papertitle>
                 <p align="justify">
-                  Should we pursue the perfection of multi-modal sensor fusion for maximum redundancy, as seen in systems with LiDAR, radar, and cameras? Or should we champion the development of advanced, vision-centric AI that can overcome the inherent ambiguities of the physical world through superior reasoning, an approach famously adopted by Tesla? This question about the fundamental trade-off between hardware robustness and algorithmic intelligence is central to the future of autonomy of either vehicles or humanoid robots.
+                  Should we pursue a perfect multi-modal sensor fusion for maximum redundancy, as seen in systems with LiDAR, radar, cameras, etc.? 
+                  Or should we champion the development of an advanced, vision-centric AI that can overcome the inherent ambiguities of the physical 
+                  world through superior reasoning, an approach famously adopted by Tesla FSD? 
+                  This question about the fundamental trade-off between hardware robustness and algorithmic intelligence is central to the future of 
+                  autonomy of robotics perception and navigation in general, or what we called, "Spatial Intelligence".
                 </p>
               </td>
             </tr>
@@ -81,12 +85,17 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:10px;width:30%;vertical-align:top;">
-                <center><img src='images/VLA.png' alt="Question 2 Image" width="90%"></center>
+                <center><img src='images/robot-cuda.png' alt="Question 2 Image" width="90%"></center>
               </td>
               <td style="padding:10px;width:70%;vertical-align:top;">
-                <papertitle><strong>Question 2: Can robots reliably follow natural-language instruction? Are robots ready for language?</strong></papertitle>
+                <papertitle><strong>Question 2: Can we build a semantic control platform for robots, specifically mobile manipulation?</strong></papertitle>
                 <p align="justify">
-                  Google's <a href="https://robotics-transformer2.github.io/">RT-2</a> model and <a href="https://palm-e.github.io/">PaLM-E</a> achieves over 80% success on unseen tabletop commands. And <a href="https://sites.google.com/view/lmnav">LM-Nav</a> uses a frozen large language model to plan indoor routes. These results suggest language can already lower data needs and expand task sets, yet brittle perception under occlusion, limited long-horizon reasoning, and safety guarantees remain open problems. Investigating uncertainty-aware planners, larger real-world benchmarks, and manipulation task generalization is the direction I plan to pursue.
+                  As robots gain the ability to understand tasks through language and vision -- thanks to models like RT-2, PaLM-E, and LM-Nav -- we are now facing 
+                  the deeper challenge: how do we translate this semantic understanding into reliable, executable control strategies? 
+                  I believe what robotics lacks is a system-level abstraction that unifies perception, high-level policy reasoning, and low-level control execution across hardware platforms.
+                  My long-term goal is to build a modular, uncertainty-aware semantic control interface — akin to CUDA for GPUs — 
+                  that enables developers to define goals like <code>pick("red mug")</code> or <code>go_to("coffee machine")</code> and deploy them on real mobile manipulation 
+                  systems with minimal retuning.
                 </p>
               </td>
             </tr>
