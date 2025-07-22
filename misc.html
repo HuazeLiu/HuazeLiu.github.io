@@ -7,7 +7,7 @@
   <meta name="author" content="Huaze Liu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet"type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.jpg">
   <style>
     .button {
@@ -18,10 +18,20 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-      margin: 4px 2px;
+      margin-top: 15px; /* Add space above the button */
       cursor: pointer;
       border-radius: 8px;
       border: none;
+      transition: background-color 0.2s;
+    }
+    .button:hover {
+        background-color: #185abc;
+    }
+    .card-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #1a73e8;
+        margin-bottom: 15px;
     }
   </style>
 </head>
@@ -48,78 +58,36 @@
     </tbody></table>
     <hr>
     
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr><td style="padding:20px;width:100%;vertical-align:middle;text-align:center;">
-          <div style="background-color:#e8f0fe;color:#1a73e8;padding:10px 20px;border-radius:25px;display:inline-block;font-weight:bold;">
-              Robotics Novel Reading & Record 📚
-          </div>
-      </td></tr>
-      <tr><td style="padding:0px 40px;width:100%;vertical-align:middle;text-align:center;">
-          <p align="justify">
-            My fascination with robotics began in middle school, sparked by reading Isaac Asimov's Robot Series! The Three Laws of Robotics were my first introduction to the core challenge of encoding 
-            complex human ethics into machine logic. This foundational interest grew as I explored works by other authors who questioned and expanded upon these rules, delving into the nuanced grey areas 
-            of artificial consciousness and societal integration. From the philosophical dilemmas in Philip K. Dick's androids to the intricate explorations of language and purpose in modern sci-fi, 
-            I believe that science fiction serves as a powerful speculative framework for real-world robotics. It's a space where the ethical, social, and technical challenges of tomorrow—such as building genuinely 
-            trustworthy AI or ensuring seamless human-robot interaction—can be explored without limit. This curated list represents a journey through the ideas that have shaped my perspective and continue to inspire 
-            my work in building the next generation of intelligent systems. I'll update this list every month!         
-        </p>
-          <a href="YOUR_GOOGLE_DOC_LINK_HERE" class="button" target="_blank">View Reading List</a>
-      </td></tr>
-    </tbody></table>
-    <br>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr><td style="padding:20px;width:100%;vertical-align:middle;text-align:center;">
-          <div style="background-color:#e8f0fe;color:#1a73e8;padding:10px 20px;border-radius:25px;display:inline-block;font-weight:bold;">
-              Robot Learning Club Journal 🧑‍💻
-          </div>
-      </td></tr>
-      <tr><td style="padding:0px 40px;width:100%;vertical-align:middle;text-align:center;">
-        <p align="justify">
-            We are honored to receive fundings and support from <a href="https://galaxea-dynamics.com/">GalaXea Dynamics</a> and Harvey Mudd College to found the first Robot Learning Club at Harvey Mudd College.
-            We have a close collaboration with <a href="http://crt.caltech.edu/index.html">Caltech Robotics Teams</a>. As the founder of the club, I will maintain and update a journal of our discussions, key takeaways from paper reviews, and progress on our collaborative projects.
-        </p>
-        <a href="#" class="button" target="_blank">Read Our Journal (Coming Soon in early September!)</a>
-      </td></tr>
-    </tbody></table>
-    <br>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr><td style="padding:20px;width:100%;vertical-align:middle;text-align:center;">
-          <div style="background-color:#e8f0fe;color:#1a73e8;padding:10px 20px;border-radius:25px;display:inline-block;font-weight:bold;">
-              Conference & Tech Collection 📄
-          </div>
-      </td></tr>
-      <tr><td style="padding:0px 40px;width:100%;vertical-align:middle;text-align:center;">
-        <p align="justify">
-          I create a collection of interesting papers, posters, and talks (just from my personal perspective...) from major CV/AI/robotics conferences (CVPR, ICRA, RSS, etc.) and other online resources. 
-          This repository focuses on navigation, robot learning, trustworthy LLM/VLM, and robot design.
-        </p>
-        <a href="https://github.com/HuazeLiu/YOUR_REPO_NAME" class="button" target="_blank">Browse on GitHub</a>
-      </td></tr>
-    </tbody></table>
-    <br>
-
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;border-spacing:10px;border-collapse:separate;margin-top:20px;"><tbody>
       <tr>
-        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:top">
-          <center><img src='images/placeholder_paper.png' alt="Featured Paper" width="90%"></center>
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
+          <div class="card-title">Robotics Novel Reading & Record 📚</div>
+          <p align="justify" style="font-size: 0.9em; color: #333;">
+            My fascination with robotics began in middle school, sparked by Isaac Asimov's Robot Series. Science fiction serves as a powerful speculative framework for real-world robotics, exploring the ethical, social, and technical challenges of tomorrow. This list represents a journey through ideas that have shaped my perspective. I'll update this list every month!
+          </p>
+          <a href="YOUR_GOOGLE_DOC_LINK_HERE" class="button" target="_blank">View Reading List</a>
         </td>
-        <td style="padding:20px;width:60%;vertical-align:top">
-          <papertitle><strong>[Featured] A Cool Paper Title </strong></papertitle>
-          <br>
-          Author One, Author Two
-          <br>
-          <em>RSS 2025</em>
-          <br>
-          <a href="#">[Paper]</a> / <a href="#">[Video]</a>
-          <p align="justify">A short note on why I found this paper particularly interesting or groundbreaking. It provides a novel approach to...</p>
+
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
+          <div class="card-title">Robot Learning Club Journal 🧑‍💻</div>
+          <p align="justify" style="font-size: 0.9em; color: #333;">
+            We are honored to receive support from <a href="https://galaxea-dynamics.com/">GalaXea Dynamics</a> and Harvey Mudd College to found the first Robot Learning Club at HMC, in close collaboration with <a href="http://crt.caltech.edu/index.html">Caltech Robotics Teams</a>. As the founder, I maintain a journal of our discussions, paper reviews, and progress on collaborative projects.
+          </p>
+          <a href="#" class="button" target="_blank">Read Our Journal (Coming Soon!)</a>
+        </td>
+
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
+          <div class="card-title">Conference & Tech Collection 📄</div>
+          <p align="justify" style="font-size: 0.9em; color: #333;">
+            I curate a collection of interesting papers, posters, and talks from major CV/AI/robotics conferences (CVPR, ICRA, RSS, etc.). This repository focuses on navigation, robot learning, trustworthy LLM/VLM, and robot co-design. I hope you find it useful!
+          </p>
+          <a href="https://github.com/HuazeLiu/YOUR_REPO_NAME" class="button" target="_blank">Browse on GitHub</a>
         </td>
       </tr>
     </tbody></table>
 
   </td>
 </tr>
-</table>
+</tbody></table>
 </body>
 </html>
