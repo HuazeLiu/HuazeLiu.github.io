@@ -2,7 +2,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <script type="text/javascript" src="js/js_func.js"></script>
-  <title>Huaze Liu - Misc</title>
+  <title>Huaze Liu - About Me</title>
 
   <meta name="author" content="Huaze Liu">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,6 +33,16 @@
         color: #1a73e8;
         margin-bottom: 15px;
     }
+    /* Skill pills for About Me page */
+    .skill-pill {
+      display: inline-block;
+      background-color: #ececf1;
+      color: #2f3b4a;
+      padding: 10px 18px;
+      margin: 8px 10px 8px 0;
+      border-radius: 6px;
+      font-weight: 600;
+    }
   </style>
 </head>
 
@@ -58,35 +68,49 @@
     </tbody></table>
     <hr>
     
+    <!-- About Me sections -->
     <table style="width:100%;border-spacing:10px;border-collapse:separate;margin-top:20px;"><tbody>
       <tr>
-        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
-          <div class="card-title">Robotics Novel Reading & Record 📚</div>
-          <p align="justify" style="font-size: 0.9em; color: #333;">
-            My fascination with robotics began in middle school, sparked by Isaac Asimov's Robot Series. Science fiction serves as a powerful 
-            speculative framework for real-world robotics, exploring the ethical, social, and technical challenges of tomorrow. 
-            This list represents a journey through ideas that have shaped my perspective. I'll update this list every month!
-          </p>
-          <a href="YOUR_GOOGLE_DOC_LINK_HERE" class="button" target="_blank">View Reading List</a>
+        <!-- Selected coursework & GPA -->
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:left;">
+          <div class="card-title">Selected Coursework & Major GPA</div>
+          <p style="font-size:0.95em;color:#333;">Major GPA: <strong>3.95 / 4.00</strong></p>
+          <p style="font-size:0.95em;color:#333;"><strong>Selected Coursework</strong>: Machine Learning, Computer Vision, Robotics, Embedded Systems, Numerical Methods, Optimization, Algorithms.</p>
         </td>
 
-        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
-          <div class="card-title">Robot Learning Club Journal 🧑‍💻</div>
-          <p align="justify" style="font-size: 0.9em; color: #333;">
-            We are honored to receive support from <a href="https://galaxea-dynamics.com/">GalaXea Dynamics</a> and Harvey Mudd College 
-            to found the first Robot Learning Club at Harvey Mudd College, in close collaboration with <a href="http://crt.caltech.edu/index.html">Caltech Robotics Teams</a>. 
-            As the founder, I maintain a journal of our discussions, paper reviews, and progress on collaborative projects.
-          </p>
-          <a href="#" class="button" target="_blank">Read Our Journal (Coming Soon!)</a>
+        <!-- Skills (pills) -->
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:left;">
+          <div class="card-title">Skills</div>
+          <div>
+            <span class="skill-pill">Languages:</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C/C++</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">MATLAB</span>
+          </div>
+          <div style="margin-top:10px;">
+            <span class="skill-pill">ROS/ROS2</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">OpenAI Gym</span>
+            <span class="skill-pill">Gazebo</span>
+            <span class="skill-pill">Solidworks</span>
+          </div>
+          <div style="margin-top:10px;">
+            <span class="skill-pill">Pytorch</span>
+            <span class="skill-pill">Sklearn</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">pandas</span>
+            <span class="skill-pill">Matplotlib</span>
+            <span class="skill-pill">OpenCV</span>
+          </div>
         </td>
 
-        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:center;">
-          <div class="card-title">Conference & Tech Collection 📄</div>
-          <p align="justify" style="font-size: 0.9em; color: #333;">
-            I curate a collection of interesting papers, posters, and talks from major CV/AI/robotics conferences (CVPR, ICRA, RSS, etc.). 
-            This google sheet contains paper focusing on navigation, robot learning, trustworthy LLM/VLM, and robot co-design. 
-            I hope you find it useful! 
-          <a href="https://github.com/HuazeLiu/YOUR_REPO_NAME" class="button" target="_blank">Browse on GitHub</a>
+        <!-- Activity and Awards -->
+        <td style="width:33%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:left;">
+          <div class="card-title">Activities & Awards</div>
+          <p style="font-size:0.95em;color:#333;"><strong>Founder</strong> — Robot Learning Club, Harvey Mudd College</p>
+          <p style="font-size:0.95em;color:#333;"><strong>Awards</strong>: Dean's List (2022-2024), Best Project — CSCI153</p>
+          <p style="font-size:0.95em;color:#333;">Other Activities: Hackathons, Research Assistantships, TA for CS courses.</p>
         </td>
       </tr>
     </tbody></table>
