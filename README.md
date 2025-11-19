@@ -1,4 +1,4 @@
 # HuazeLiu.github.io
 
-Fuck HTML and CSS
+I hate HTML and CSS
 
