@@ -71,13 +71,11 @@
                 <center><img src='images/tesla_waymo.jpeg' alt="Question 1 Image" width="90%"></center>
               </td>
               <td style="padding:10px;width:70%;vertical-align:top;">
-                <papertitle><strong>Question 1: What is the most effective and scalable path to robust autonomous navigation?</strong></papertitle>
+                <papertitle><strong>Question 1: How do we build a robot mind that is both data-efficient and provably reliable?</strong></papertitle>
                 <p align="justify">
-                  Should we rely on rich multi-sensor fusion (like LiDAR, radar, and cameras) to reduce uncertainty through redundancy?
-                  Or should we focus on building a powerful vision-centric AI that learns an internal world model to reason about physics, predict motion, 
-                  and handle ambiguity from raw images alone, just as Tesla FSD attempts to do?
-                  This trade-off between hardware reliability and learned understanding defines the future of how robots perceive, reason, and move through the world, 
-                  the foundation of what we call "Spatial Intelligence".
+                  Modern deep learning gives us powerful perception, but it's often opaque and data-hungry. Classical control theory gives us safety guarantees, but it struggles with the messy, unstructured real world. 
+                  I am driven by the challenge of bridging this gap: <strong>How can we design "trustworthy" learning algorithms that know what they don't know?</strong> 
+                  Whether it's using Conformal Prediction to bound uncertainty in vision models or fusing multi-modal sensors to detect when a neural network is hallucinating, my goal is to create robotic systems that are not just smart, but fundamentally safe and robust in the face of the unknown.
                 </p>
               </td>
             </tr>
@@ -89,11 +87,11 @@
                 <center><img src='images/robot-cuda.png' alt="Question 2 Image" width="90%"></center>
               </td>
               <td style="padding:10px;width:70%;vertical-align:top;">
-                <papertitle><strong>Question 2: Can we build a semantic control platform for robots, specifically mobile manipulation?</strong></papertitle>
+                <papertitle><strong>Question 2: Can a generalist robot learn to be safe without needing a god-view of the world?</strong></papertitle>
                 <p align="justify">
-                  As Vision-Language-Action models (like pi-0, pi-0.5) advance, robots are beginning to understand natural instructions such as “pick up the red mug”.
-                  However, turning this semantic understanding into reliable control under perception and reasoning uncertainty remains an open challenge.
-                  I am interested in whether we can develop a modular and uncertainty-aware control framework that unifies perception, reasoning, and action.
+                  We often train robots in simulators where they have perfect knowledge of the world (state, physics, future trajectories). But when deployed, they only have noisy sensors and limited onboard compute. This "sim-to-real" gap isn't just about domain randomization; it's about information asymmetry.
+                  I am fascinated by how we can train policies that explicitly reason about their own perceptual limitations. 
+                  <strong>Can we embed safety guarantees directly into the learning process?</strong> By aligning what the robot <em>sees</em> during training with what it <em>can see</em> in reality, I believe we can unlock true generalist capabilities—allowing robots to act confidently even when their understanding of the world is imperfect.
                 </p>
               </td>
             </tr>
