@@ -55,7 +55,7 @@
           <a href= "files/paper/ION_GNSS_2025.pdf">[Paper]</a> /
           <a href="files/slides/ION_GNSS_Slides.pdf">[Slides]</a> /
           <a href="https://youtu.be/lLeT5FmIFP8">[Video]</a>
-          <p align="justify">We designed an information-theoretic fusion framework that tracks consistency between Camera and LiDAR maps using normalized KL divergence. By treating semantic drift as a shift in probability distributions, the system allows for detecting when perception diverges from reality. This hybrid approach, which combines learned models with formal uncertainty constraints, proved resilient under degraded weather conditions where vision-only baselines typically collapse.</p>
+          <p align="justify">We designed an information-theoretic fusion framework that tracks consistency between Camera and LiDAR maps. By treating semantic drift as a shift in probability distributions, the system allows for detecting when perception diverges from reality.</p>
         </td>
       </tr>
 
@@ -72,7 +72,7 @@
           <br>
           <a href="files/paper/SCR2025_submission_cp.pdf">[Paper]</a> /
           <a href="files/paper/ICCV_T2FM.pdf">[Paper (Long version)]</a>
-          <p align="justify">To address the limitations of traditional uncertainty models in handling high-dimensional, non-Gaussian sensor noise, we applied Conformal Prediction (CP) to object detection and semantic segmentation. This method provides mathematically guaranteed bounds on prediction errors, offering a way to make data-driven perception provably reliable rather than just heuristically confident.</p>
+          <p align="justify">To address the limitations of traditional uncertainty models in handling high-dimensional and non-Gaussian sensor noise, we applied conformal prediction to robotics perception. It provides mathematically guaranteed bounds on prediction errors, offering a way to make data-driven perception reliable.</p>
         </td>
       </tr>
 
@@ -82,7 +82,7 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr><td style="padding:20px;width:100%;vertical-align:middle;text-align:center;">
           <div style="background-color:#fce8e6;color:#1a73e8;padding:10px 20px;border-radius:25px;display:inline-block;font-weight:bold;">
-              Ongoing Research Project
+              Under Review
           </div>
       </td></tr>
     </tbody></table>
@@ -99,13 +99,14 @@
           </center>
         </td>
         <td style="padding:20px;width:60%;vertical-align:top">
-          <papertitle><strong>Humanoid Catching with Camera-Frame Detections and Trajectory Prediction</strong></papertitle>
+          <papertitle><strong>Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand</strong></papertitle>
           <br>
           <strong>Huaze Liu</strong>, and other cool collaboraters
           <br>
           <a href="files/slides/catching_slides.pdf">[Slides]</a> (Under Preparation)
           <p align="justify">
-            I addressed domain generalization challenges in humanoid catching by enforcing an actor-critic observation asymmetry. While the critic retained privileged state access, the actor was trained on noisy, delayed observations to mimic real-world constraints. This information alignment allowed the UniTree G1 robot to learn robust strategies under physical control delays, achieving over 85% success in high-fidelity simulations.
+            Designed and trained UniTree G1 upper-body interception policy with hardware-aligned torque and safety constraints.
+            Implemented sim-to-real transfer using DAgger to deploy vision-based controller at 50 Hz.
           </p>
         </td>
       </tr>

@@ -42,8 +42,8 @@
           Hi! I am a senior undergraduate student at <a href="https://www.hmc.edu/">Harvey Mudd College</a> majoring in Computer Science and Mathematics, with a social science concentration in Economics.
         </p>
         <p>
-          I am a full-stack robotics engineer working on robot design, perception, and control. I'm mostly interested in how autonomous systems perceive and navigate in the real world robustly and safely. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> at Engineering Department
-          on Foundation Models and Sensor Fusion for trustworthy autonomous vehicle navigation. Starting from June 2025, I worked on humanoid robot catching with <a href="https://an-axolotl.github.io/fay-robotics.github.io/">Kehlani Fay</a> and <a href="https://arth.website/">Arth Shukla</a>, under the supervision of
+          I work on robotics control, dexterous manipulation, and reinforcement learning. Broadly speaking, I'm interested in how systems perceive and acts in the real world robustly. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> at Engineering Department
+          on sensor fusion for trustworthy autonomous navigation. I also spent time working on humanoid robot catching with <a href="https://an-axolotl.github.io/fay-robotics.github.io/">Kehlani Fay</a> and <a href="https://arth.website/">Arth Shukla</a>, under the supervision of
           <a href="https://tolley.eng.ucsd.edu/">Prof. Michael Tolley</a> and <a href="https://cseweb.ucsd.edu/~haosu/">Prof. Hao Su</a> at UC San Diego.
         </p>
         <p style="text-align:center">
@@ -71,11 +71,11 @@
                 <center><img src='videos/robotics perception.gif' alt="Question 1 Image" width="95%"></center>
               </td>
               <td style="padding:10px;width:60%;vertical-align:top;">
-                <papertitle><strong>Question 1: How do we build a robot mind that is both data-efficient and provably reliable?</strong></papertitle>
+                <papertitle><strong>Question 1: How do we build a robot mind that is both data-efficient and reliable?</strong></papertitle>
                 <p align="justify">
-                  Modern deep learning gives us powerful perception, but it's often opaque and data-hungry. Classical control theory gives us safety guarantees, but it struggles with the messy, unstructured real world. 
-                  I am driven by the challenge of bridging this gap: <strong>How can we design "trustworthy" learning algorithms that know what they don't know?</strong> 
-                  Whether it's using Conformal Prediction to bound uncertainty in vision models or fusing multi-modal sensors to detect when a neural network is hallucinating, my goal is to create robotic systems that are not just smart, but fundamentally safe and robust in the face of the unknown.
+                  Modern deep learning gives us powerful perception, but it's often data-hungry. Classical control theory gives us safety guarantees, but it struggles with the unstructured real world. 
+                  I'm driven by the challenge of bridging this gap: How can we design trustworthy learning algorithms that know what they don't know? 
+                  My goal is to create robotic systems that are not just smart, but fundamentally safe and robust in the face of the unknown.
                 </p>
               </td>
             </tr>
@@ -87,11 +87,10 @@
                 <center><img src='images/generalist robot.png' alt="Question 2 Image" width="95%"></center>
               </td>
               <td style="padding:10px;width:60%;vertical-align:top;">
-                <papertitle><strong>Question 2: Can a generalist robot learn to be safe without needing a god-view of the world?</strong></papertitle>
+                <papertitle><strong>Question 2: Towards Generalist Robot Control Policies</strong></papertitle>
                 <p align="justify">
-                  We often train robots in simulators where they have perfect knowledge of the world (state, physics, future trajectories). But when deployed, they only have noisy sensors and limited onboard compute. This "sim-to-real" gap isn't just about domain randomization; it's about information asymmetry.
+                  We often train robots in simulators where they have perfect knowledge of the world. But when deployed, they only have noisy sensors and limited onboard compute. This Sim2Real gap isn't just about domain randomization; it's about information asymmetry.
                   I am fascinated by how we can train policies that explicitly reason about their own perceptual limitations. 
-                  <strong>Can we embed safety guarantees directly into the learning process?</strong> By aligning what the robot <em>sees</em> during training with what it <em>can see</em> in reality, I believe we can unlock true generalist capabilities—allowing robots to act confidently even when their understanding of the world is imperfect.
                 </p>
               </td>
             </tr>
