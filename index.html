@@ -9,6 +9,10 @@
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/icon.jpg">
+  <style>
+    .pub-links a { color: #6a1b9a; }
+    .pub-links a:hover { color: #4a148c; }
+  </style>
 </head>
 
 <body>
@@ -17,16 +21,13 @@
   <td style="padding:0px">
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
-        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
           <a href="index.html" style="font-weight:bold;color:#000;">Home</a>
         </td>
-        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
-          <a href="research.html">Research</a>
-        </td>
-        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
           <a href="projects.html">Projects</a>
         </td>
-        <td style="padding:10px;width:25%;vertical-align:middle;text-align:center;">
+        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
           <a href="misc.html">About Me</a>
         </td>
       </tr>
@@ -42,9 +43,9 @@
           Hi! I am a senior undergraduate student at <a href="https://www.hmc.edu/">Harvey Mudd College</a> majoring in Computer Science and Mathematics, with a social science concentration in Economics.
         </p>
         <p>
-          I work on robotics control, dexterous manipulation, and reinforcement learning. Broadly speaking, I'm interested in how systems perceive and acts in the real world robustly. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> at Engineering Department
-          on sensor fusion for trustworthy autonomous navigation. I also spent time working on humanoid robot catching with <a href="https://an-axolotl.github.io/fay-robotics.github.io/">Kehlani Fay</a> and <a href="https://arth.website/">Arth Shukla</a>, under the supervision of
-          <a href="https://tolley.eng.ucsd.edu/">Prof. Michael Tolley</a> and <a href="https://cseweb.ucsd.edu/~haosu/">Prof. Hao Su</a> at UC San Diego.
+          I work on robotics control, dexterous manipulation, and reinforcement learning. Broadly speaking, I'm interested in how systems perceive and acts in the real world robustly. At Harvey Mudd College, I closely worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> 
+          on sensor fusion for trustworthy autonomous navigation. I also worked on humanoid robot catching with <a href="https://an-axolotl.github.io/fay-robotics.github.io/">Kehlani Fay</a> and <a href="https://arth.website/">Arth Shukla</a>, under the supervision of
+          <a href="https://tolley.eng.ucsd.edu/">Prof. Michael Tolley</a> and <a href="https://cseweb.ucsd.edu/~haosu/">Prof. Hao Su</a> at UC San Diego in 2025.
         </p>
         <p style="text-align:center">
           <a href="mailto:hualiu@hmc.edu">Email</a> &nbsp/&nbsp
@@ -61,41 +62,80 @@
     </tr>
     </tbody></table>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:36px auto 0 auto;"><tbody>
       <tr>
-        <td style="padding:40px 20px 20px 20px;width:100%;vertical-align:middle;background-color:#f9f9f9;border:1px solid #e0e0e0;border-radius:8px;">
-          <heading style="font-size:1.5em; display:block; text-align:center; margin-bottom:20px;">Questions That Always Interest Me</heading>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px;width:40%;vertical-align:middle;">
-                <center><img src='videos/robotics perception.gif' alt="Question 1 Image" width="90%"></center>
-              </td>
-              <td style="padding:10px;width:60%;vertical-align:top;">
-                <papertitle><strong>Question 1: How do we build a robot mind that is both data-efficient and reliable?</strong></papertitle>
-                <p align="justify">
-                  Modern deep learning gives us powerful perception, but it's often data-hungry. Classical control theory gives us safety guarantees, but it struggles with the unstructured real world. 
-                  I'm driven by the challenge of bridging this gap: How can we design trustworthy learning algorithms that know what they don't know? 
-                  My goal is to create robotic systems that are not just smart, but fundamentally safe and robust in the face of the unknown.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <hr style="border:0;height:1px;background-color:#e0e0e0;margin:20px 0;">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px;width:40%;vertical-align:middle;">
-                <center><img src='images/generalist robot.png' alt="Question 2 Image" width="90%"></center>
-              </td>
-              <td style="padding:10px;width:60%;vertical-align:top;">
-                <papertitle><strong>Question 2: Towards Generalist Robot Control Policies</strong></papertitle>
-                <p align="justify">
-                  We often train robots in simulators where they have perfect knowledge of the world. But when deployed, they only have noisy sensors and limited onboard compute. This Sim2Real gap isn't just about domain randomization; it's about information asymmetry.
-                  I am fascinated by how we can train policies that explicitly reason about their own perceptual limitations. 
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          </td>
+        <td style="padding:0 20px 28px 20px;width:100%;vertical-align:top;">
+          <heading style="font-size:1.5em;display:block;text-align:center;margin-bottom:16px;">My Research</heading>
+          <p style="margin:0 0 12px 0;">My research focuses on:</p>
+          <ul style="margin:0;padding-left:22px;line-height:1.55;">
+            <li style="margin-bottom:10px;"><strong>Dexterous Manipulation</strong> — integrating model-free learning with physics-based simulation, optimization, and control to solve contact-rich dexterous manipulation efficiently and reliably.</li>
+            <li><strong>Multimodal World Model</strong> — learning predictive models that fuse vision, language, and proprioception to support planning and robust closed-loop behavior in unstructured environments.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:center;">
+          <heading style="font-size:1.5em;display:block;">Publications &amp; Preprints</heading>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 36px 20px;width:40%;vertical-align:middle">
+          <center>
+            <object data="images/main_diagram_vf.pdf" type="application/pdf" aria-label="Catch It All main diagram" style="width:90%;max-width:320px;height:380px;border-radius:8px;border:1px solid #e8e8e8;">
+              <a href="images/main_diagram_vf.pdf">View diagram (PDF)</a>
+            </object>
+          </center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle><strong>Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand</strong></papertitle>
+          <br>
+          <strong>Huaze Liu</strong>, Kehlani Fay, Arth Shukla, and collaborators
+          <br>
+          <em>Manuscript in preparation</em>
+          <br>
+          <span class="pub-links"><a href="files/slides/catching_slides.pdf">[Slides]</a></span>
+          <p align="justify">Designed and trained a UniTree G1 upper-body interception policy with hardware-aligned torque and safety constraints; implemented sim-to-real transfer using DAgger to deploy a vision-based controller at 50 Hz.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 36px 20px;width:40%;vertical-align:middle">
+          <center><img src="images/ION_framework.png" alt="Language-Driven Multimodal Semantic Change Detection" width="90%" style="max-width:320px;border-radius:4px;"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle><strong>Language-Driven Multimodal Semantic Change Detection in Urban Maps</strong></papertitle>
+          <br>
+          <strong>Huaze Liu *</strong>, Zihao Gao *, Adyasha Mohanty
+          <br>
+          <em>Proceedings of the Institute of Navigation GNSS+ conference (ION GNSS+ 2025)</em>
+          <br>
+          <span class="pub-links">
+            <a href="files/paper/ION_GNSS_2025.pdf">[Paper]</a> /
+            <a href="files/slides/ION_GNSS_Slides.pdf">[Slides]</a> /
+            <a href="https://youtu.be/lLeT5FmIFP8">[Video]</a>
+          </span>
+          <p align="justify">We designed an information-theoretic fusion framework that tracks consistency between camera and LiDAR maps; by treating semantic drift as a shift in probability distributions, the system detects when perception diverges from reality.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center><img src="images/cp.png" alt="Conformal Prediction" width="90%" style="max-width:320px;border-radius:4px;"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle><strong>Conformal Prediction for Reliable Test-Time Uncertainty in Robotic Vision</strong></papertitle>
+          <br>
+          <strong>Huaze Liu</strong>, Adyasha Mohanty
+          <br>
+          <em>Southern California AI and Robotics Symposium 2025</em>
+          <br>
+          <span class="pub-links">
+            <a href="files/paper/SCR2025_submission_cp.pdf">[Paper]</a> /
+            <a href="files/paper/ICCV_T2FM.pdf">[Paper (Long version)]</a>
+          </span>
+          <p align="justify">To address limitations of traditional uncertainty models under high-dimensional and non-Gaussian sensor noise, we applied conformal prediction to robotics perception, providing mathematically guaranteed bounds on prediction errors.</p>
+        </td>
       </tr>
     </tbody></table>
   </td>
