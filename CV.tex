@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Huaze (Patrick) Liu
+% Based on: Jake Gutierrez's template (https://github.com/jakegut/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Huaze (Patrick) Liu} \\ \vspace{2pt}
+    \small \href{mailto:hualiu@g.hmc.edu}{\underline{hualiu@g.hmc.edu}} $\,\vert\,$
+    \href{https://huazeliu.github.io/}{\underline{Personal Website}} $\,\vert\,$
+    \href{https://www.linkedin.com/in/huazeliu/}{\underline{LinkedIn}} $\,\vert\,$
+    \href{https://scholar.google.com/citations?user=CVNefH4AAAAJ&hl=en}{\underline{Google Scholar}} $\,\vert\,$
+    \href{https://github.com/HuazeLiu}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvey Mudd College}{2022 -- 2026}
+      {B.S. in Joint Computer Science \& Mathematics, Concentration in Economics}{Claremont, CA}
+    \resumeItemListStart
+      \resumeItem{\textbf{Cumulative GPA:} 3.784\,/\,4.00 \quad (\textbf{Major GPA:} 3.915\,/\,4.00)}
+      \resumeItem{\textbf{Relevant Coursework:} Data Structures, Algorithms, Computer Vision, Neural Networks, Machine Learning, Reinforcement Learning, Multivariable Calculus, Linear Algebra, ODEs, Intermediate Probability, Real Analysis, Optimization, Advanced Systems Engineering, Digital Signal Processing, State Estimation.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \item\small{[C1] Fay, K., Shukla, A., \textbf{Liu, H.}, Djapri, D., Buynitsky, A., Hansen, N. (2026). \textit{Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand.} Submitted to IROS 2026.}
+    \vspace{2pt}
+    \item\small{[C2] \textbf{Liu, H.*}, Gao, Z.*, Mohanty, A. (2025). \textit{Language-Driven Semantic Change Detection in Urban Maps via Multi-Modal Deep Learning.} The 38th International Technical Meeting of the Satellite Division of the Institute of Navigation (ION GNSS+ 2025), Baltimore (*equal contribution).}
+    \vspace{2pt}
+    \item\small{[C3] \textbf{Liu, H.}, \& Mohanty, A. (2025). \textit{Conformal Prediction for Reliable Test-Time Uncertainty in Robotic Vision.} Southern California AI and Robotics Symposium (SCAIR 2025), Pomona.}
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of California, San Diego}{June 2025 -- March 2026}
+      {Visiting Scholar, advised by Drs. Hao Su and Michael T. Tolley}{La Jolla, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and trained a UniTree G1 upper-body interception policy under hardware torque and safety constraints.~\textbf{[C1]}}
+        \resumeItem{Implemented Sim-to-Real transfer using DAgger to deploy a vision-based controller at 50\,Hz.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Harvey Mudd College}{July 2024 -- Dec. 2025}
+      {Undergraduate Research Intern, advised by Dr. Adyasha Mohanty}{Claremont, CA}
+      \resumeItemListStart
+        \resumeItem{Built a sensor-fusion map anomaly detection pipeline integrating image and LiDAR semantic segmentation.~\textbf{[C2]}}
+        \resumeItem{Evaluated split Conformal Prediction for segmentation and detection using vision foundation models.~\textbf{[C3]}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Harvey Mudd College}{Aug. 2023 -- Dec. 2025}
+      {Undergraduate Research Intern, advised by Dr. Calden Wloka}{Claremont, CA}
+      \resumeItemListStart
+        \resumeItem{Built a video object-removal pipeline to automatically erase moving creatures from nature footage.}
+        \resumeItem{Quantified the effects of padding-induced non-veridical representation on CNN performance with Mask R-CNN.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of California, San Francisco}{May -- Aug. 2023}
+      {UCSF ci2 Summer Fellow, advised by Dr. Srikantan Nagarajan}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Built Machine Learning models for Tinnitus classification using fMRI and MEG data, achieving 72.4\% accuracy and benchmarking against Graph-CNN.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of California, Berkeley}{Aug. 2025 -- May 2026}
+      {Full-stack Machine Learning Engineer Intern}{Berkeley, CA}
+      \resumeItemListStart
+        \resumeItem{Developed an automated Deep Learning system to detect truck exhaust plumes and calculate emission factors.}
+        \resumeItem{Designed quality assurance interface and multi-instrument data alignment pipeline.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Harvey Mudd College}{Jan. 2024 -- Dec. 2025}
+      {Teaching Assistant}{Claremont, CA}
+      \resumeItemListStart
+        \resumeItem{Tutored over 50 students in core concepts, provided homework assistance, guided projects, and graded assignments.}
+        \resumeItem{Courses: CSCI153 -- Computer Vision (2024 Fall, 2025 Spring, 2025 Fall), ENGR207 -- Digital Signal Processing (2025 Spring), and CSCI070 -- Data Structures \& Program Development (2024 Spring, 2024 Fall).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Automated Video Object Removal Tool} $\,\vert\,$ \emph{Python} $\,\vert\,$ \href{https://github.com/HuazeLiu/Automated-Video-Eraser}{\underline{GitHub Repo}}}{2025}
+        \resumeItemListStart
+          \resumeItem{Architected a full video object removal pipeline integrating tracking, SAM2 masks, and diffusion-based inpainting.}
+          \resumeItem{Implemented temporal ghosting suppression post-process and improved video fidelity.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{VLM-Guided MPC: Semantic-Aware Planning in Deceptive Environments} $\,\vert\,$ \emph{Python}}{2025}
+        \resumeItemListStart
+          \resumeItem{Developed a hierarchical VLA-MPC control stack with GPT5-mini for reasoning, paired with MPC for dynamic execution.}
+          \resumeItem{Demonstrated the framework's ability to solve semantic trap scenarios that naive MPC and RL (PPO) baselines incorrectly pursued.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Open-source Robotics Platforms CAD Collection} $\,\vert\,$ \emph{SolidWorks} $\,\vert\,$ \href{https://github.com/HuazeLiu/Robotics_CAD_Collection}{\underline{GitHub Repo}}}{2025}
+        \resumeItemListStart
+          \resumeItem{Built SolidWorks models and assemblies aimed at enabling affordable, open-source robotic platforms.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Vision-based Localization \& Path Planning TurtleBot System} $\,\vert\,$ \emph{Python, MATLAB} $\,\vert\,$ \href{https://drive.google.com/file/d/1vnI3-PzYJyxch2ew_fPjdO0ufkhAl3qE/view?usp=sharing}{\underline{Report}}}{2025}
+        \resumeItemListStart
+          \resumeItem{Developed a vision-based search TurtleBot 4 using EKF and UKF for state estimation and target tracking.}
+          \resumeItem{Used the A* algorithm to compute and follow an optimal path to the GPS coordinates.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Multi-Objective Acquisition Function for Bayesian Optimization} $\,\vert\,$ \emph{Python}}{2025}
+        \resumeItemListStart
+          \resumeItem{Developed a lightweight multi-objective acquisition function benchmarked on SVM and CNN, reducing latency by 8\% compared to EI and UCB.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Vision Transformer for Traffic Object Detection} $\,\vert\,$ \emph{Python} $\,\vert\,$ \href{https://github.com/HuazeLiu/A-Comparative-Study-of-DETR-and-YOLO-on-Traffic-Object-Detection}{\underline{GitHub Repo}}}{2024}
+        \resumeItemListStart
+          \resumeItem{Fine-tuned DETR on the KITTI dataset, achieving 71.0\% mAP and 43.5\% mAP (50:95) with 18.1\,ms inference time.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Dynamic Time Warping with Confidence Intervals} $\,\vert\,$ \emph{Python} $\,\vert\,$ \href{https://github.com/HuazeLiu/DTW_w_Confidence_Interval}{\underline{GitHub Repo}}}{2024}
+        \resumeItemListStart
+          \resumeItem{Applied Dynamic Time Warping to develop new metrics and visualizations for audio alignment confidence.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Spampede Game} $\,\vert\,$ \emph{Java} $\,\vert\,$ \href{https://github.com/HuazeLiu/Spampede_Board_Game}{\underline{GitHub Repo}}}{2023}
+        \resumeItemListStart
+          \resumeItem{Designed a custom ``Snake Game'' UI and backend in Java using the MVC software design pattern; added an automated mode that finds optimal paths via BFS.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, C++, SQL, C\#, Java, MATLAB, LaTeX, R} \\
+     \textbf{Software / Tools}{: Visual Studio, Git, Linux, ROS/ROS2, Isaac Sim/Lab, MuJoCo, SolidWorks, Docker, Jupyter} \\
+     \textbf{Technical Skills}{: 2D/3D Computer Vision, Sensor Fusion, Reinforcement Learning, Robotics Control}
+    }}
+ \end{itemize}
+
+%-----------AWARDS-----------
+\section{Awards \& Scholarships}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Harvey Mudd College Dean's List} \hfill 2022 -- 2026 \\
+      \textbf{Harvey S. Mudd Merit Award} -- Awarded \$10{,}000 annually for academic merit (\$40{,}000 total). \hfill 2022 -- 2026 \\
+      \textbf{HMC Shanahan Projects Fund} -- Awarded \$11{,}000 for an underwater autonomous pool-cleaning system. \hfill 2024 -- 2025 \\
+      \textbf{HMC Leeds Student Travel Grant} -- Awarded \$3{,}000 to attend the 38th ION GNSS+ Meeting, Baltimore, MD. \hfill 2025
+    }}
+ \end{itemize}
+
+\end{document}
