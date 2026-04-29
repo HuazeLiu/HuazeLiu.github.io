@@ -48,7 +48,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -56,15 +56,15 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -159,8 +159,9 @@
       {University of California, Berkeley}{Aug. 2025 -- May 2026}
       {Full-stack Machine Learning Engineer Intern}{Berkeley, CA}
       \resumeItemListStart
-        \resumeItem{Developed an automated Deep Learning system to detect truck exhaust plumes and calculate emission factors.}
-        \resumeItem{Designed quality assurance interface and multi-instrument data alignment pipeline.}
+        \resumeItem{Built a multi-pollutant Temporal Convolutional Network (TCN) pipeline in PyTorch for vehicle exhaust peak detection.}
+        \resumeItem{Architected the data layer (TruckObject, DataWindow, checkpoint resolver) and an emission-factor calculator.}
+        \resumeItem{Integrated the ML backend into a Flask web app with per-instrument model selection and cross-platform launchers.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -234,8 +235,9 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Programming Languages}{: Python, C++, SQL, C\#, Java, MATLAB, LaTeX, R} \\
-     \textbf{Software / Tools}{: Visual Studio, Git, Linux, ROS/ROS2, Isaac Sim/Lab, MuJoCo, SolidWorks, Docker, Jupyter} \\
-     \textbf{Technical Skills}{: 2D/3D Computer Vision, Sensor Fusion, Reinforcement Learning, Robotics Control}
+     \textbf{Frameworks / Libraries}{: PyTorch, NumPy, Pandas, OpenCV, Scikit-learn, Hugging Face, Flask} \\
+     \textbf{Software / Tools}{: Git, Linux, ROS/ROS2, Isaac Sim/Lab, MuJoCo, SolidWorks, Docker, Jupyter, Visual Studio} \\
+     \textbf{Technical Skills}{: 2D/3D Computer Vision, Deep Learning, Sensor Fusion, Reinforcement Learning, Robotics Control}
     }}
  \end{itemize}
 
