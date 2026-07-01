@@ -81,12 +81,12 @@ tr,
 p,
 a {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
+    font-size: 16px
 }
 
 strong {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600
 }
 
@@ -101,7 +101,7 @@ red {
 
 heading {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     color: #003262;
     /*text-decoration: underline;*/
     /*text-decoration-style: solid;*/
@@ -111,14 +111,14 @@ heading {
 
 papertitle {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     /*color: #003262;*/
 }
 
 name {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .one {
@@ -154,7 +154,7 @@ span.highlight {
 }
 
 span.badge {
-    font-size: 13px;
+    font-size: 15px;
     background-color: #003262;
     color: #ffffff;
     font-weight: 600;
