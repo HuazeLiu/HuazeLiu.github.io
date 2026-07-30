@@ -12,23 +12,35 @@
   <style>
     .pub-links a { color: #6a1b9a; }
     .pub-links a:hover { color: #4a148c; }
-    .skill-pill {
-      display: inline-block;
-      background-color: #ececf1;
-      color: #2f3b4a;
-      padding: 10px 18px;
-      margin: 8px 10px 8px 0;
-      border-radius: 6px;
-      font-weight: 600;
+    .side-nav {
+      position: fixed;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.9em;
+    }
+    .side-nav a { color: #000; }
+    .side-nav a:hover { color: #FDB515; }
+    @media (max-width: 1000px) {
+      .side-nav { display: none; }
     }
   </style>
 </head>
 
 <body>
+<nav class="side-nav">
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#featured-project">Featured Project</a>
+  <a href="#skills">Skills</a>
+  <a href="#activities">Activities &amp; Awards</a>
+</nav>
 <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 <tr style="padding:0px">
   <td style="padding:0px">
-    <hr>
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -62,7 +74,7 @@
     </tr>
     </tbody></table>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:36px auto 0 auto;"><tbody>
+    <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:36px auto 0 auto;"><tbody>
       <tr>
         <td style="padding:0 20px 28px 20px;width:100%;vertical-align:top;">
           <heading style="font-size:1.5em;display:block;text-align:left;margin-bottom:16px;">Research</heading>
@@ -145,7 +157,7 @@
       </tr>
     </tbody></table>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
+    <table id="featured-project" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
       <tr>
         <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
           <heading style="font-size:1.5em;display:block;">Featured Project</heading>
@@ -251,7 +263,7 @@
       </tr>
     </tbody></table>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
+    <table id="skills" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
       <tr>
         <td style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
           <heading style="font-size:1.5em;display:block;">Skills</heading>
@@ -261,44 +273,23 @@
         <td style="padding:0 20px 20px 20px;">
           <!-- Programming Languages -->
           <div style="margin-bottom:8px;">
-            <strong>Programming Languages</strong>
-            <br>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">C/C++</span>
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">MATLAB</span>
+            <strong>Programming Languages</strong>: Python, C/C++, Java, MATLAB
           </div>
 
           <!-- Software / Tools -->
           <div style="margin-bottom:8px;">
-            <strong>Software / Tools</strong>
-            <br>
-            <span class="skill-pill">Linux</span>
-            <span class="skill-pill">ROS/ROS2</span>
-            <span class="skill-pill">Visual Studio</span>
-            <span class="skill-pill">Git</span>
-            <span class="skill-pill">Isaac Sim/Lab/Gym</span>
-            <span class="skill-pill">Mujoco</span>
-            <span class="skill-pill">SolidWorks</span>
-            <span class="skill-pill">Docker</span>
-            <span class="skill-pill">Jupyter</span>
+            <strong>Software / Tools</strong>: Linux, ROS/ROS2, Visual Studio, Git, Isaac Sim/Lab/Gym, Mujoco, SolidWorks, Docker, Jupyter
           </div>
 
           <!-- Technical Skills -->
           <div style="margin-bottom:8px;">
-            <strong>Technical Skills</strong>
-            <br>
-            <span class="skill-pill">2D/3D Computer Vision</span>
-            <span class="skill-pill">Sensor Fusion</span>
-            <span class="skill-pill">Autonomous Navigation</span>
-            <span class="skill-pill">Reinforcement Learning</span>
-            <span class="skill-pill">Sim-to-Real Transfer</span>
+            <strong>Technical Skills</strong>: 2D/3D Computer Vision, Sensor Fusion, Autonomous Navigation, Reinforcement Learning, Sim-to-Real Transfer
           </div>
         </td>
       </tr>
     </tbody></table>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
+    <table id="activities" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
       <tr>
         <td style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
           <heading style="font-size:1.5em;display:block;">Activities &amp; Awards</heading>
