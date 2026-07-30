@@ -12,6 +12,21 @@
   <style>
     .pub-links a { color: #6a1b9a; }
     .pub-links a:hover { color: #4a148c; }
+    .card-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #1a73e8;
+        margin-bottom: 15px;
+    }
+    .skill-pill {
+      display: inline-block;
+      background-color: #ececf1;
+      color: #2f3b4a;
+      padding: 10px 18px;
+      margin: 8px 10px 8px 0;
+      border-radius: 6px;
+      font-weight: 600;
+    }
   </style>
 </head>
 
@@ -21,14 +36,8 @@
   <td style="padding:0px">
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
-        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
+        <td style="padding:10px;width:100%;vertical-align:middle;text-align:center;">
           <a href="index.html" style="font-weight:bold;color:#000;">Home</a>
-        </td>
-        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
-          <a href="projects.html">Projects</a>
-        </td>
-        <td style="padding:10px;width:33%;vertical-align:middle;text-align:center;">
-          <a href="misc.html">About Me</a>
         </td>
       </tr>
     </tbody></table>
@@ -69,7 +78,7 @@
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:36px auto 0 auto;"><tbody>
       <tr>
         <td style="padding:0 20px 28px 20px;width:100%;vertical-align:top;">
-          <heading style="font-size:1.5em;display:block;text-align:center;margin-bottom:16px;">My Research</heading>
+          <heading style="font-size:1.5em;display:block;text-align:left;margin-bottom:16px;">My Research</heading>
           <p style="margin:0 0 12px 0;">My research focuses on:</p>
           <ul style="margin:0;padding-left:22px;line-height:1.55;">
             <li style="margin-bottom:10px;"><strong>Dexterous Manipulation</strong> — integrating model-free learning with physics-based simulation, optimization, and control to solve contact-rich dexterous manipulation efficiently and reliably.</li>
@@ -81,7 +90,7 @@
 
     <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr>
-        <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:center;">
+        <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
           <heading style="font-size:1.5em;display:block;">Publications &amp; Preprints</heading>
         </td>
       </tr>
@@ -145,6 +154,163 @@
             <a href="files/paper/SCR2025_submission_cp.pdf">[Paper]</a> /
             <a href="files/paper/ICCV_T2FM.pdf">[Paper (Long version)]</a>
           </span>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:12px;"><tbody>
+      <tr>
+        <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
+          <heading style="font-size:1.5em;display:block;">Featured Project</heading>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:0 20px 8px 20px;">
+          <p style="text-align:center;font-style:italic;margin:0;line-height:1.55;color:#f6a7a0;">Beyond robotics, I'm also interested in AI agents, computer vision, and ML theory. I regularly maintain and build new projects here.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center><img src='images/proxweld.png' alt="ProxWeld support agent landing page" width="90%"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>ProxWeld for Vulcan OmniPro 220</strong></papertitle>
+          <br>
+          <a href="https://github.com/HuazeLiu/prox-omnipro-support-agent.git">[Code]</a>
+          <p align="justify">Built a manual-grounded AI support agent for the Vulcan OmniPro 220 welder using retrieval over bundled PDF manuals and the Claude Agent SDK, returning page-level citations, manual visuals, and structured wiring/troubleshooting helpers through a Next.js chat UI.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center>
+            <div style="display: flex; justify-content: space-between; width: 100%; align-items: center;">
+              <!-- Input Video -->
+              <div style="position:relative; width: 49.5%;">
+                <span style="position:absolute; top:4px; left:4px; background:rgba(0,0,0,0.6); color:white; padding:2px 6px; border-radius:4px; font-size:11px; z-index:10;">Input</span>
+                <img src="videos/moose_before.gif" alt="Input Video" style="width:100%; border-radius:8px; display: block;">
+              </div>
+              <!-- Output Video -->
+              <div style="position:relative; width: 49.5%;">
+                <span style="position:absolute; top:4px; left:4px; background:rgba(0,0,0,0.6); color:white; padding:2px 6px; border-radius:4px; font-size:11px; z-index:10;">Output</span>
+                <img src="videos/moose_after.gif" alt="Output Video" style="width:100%; border-radius:8px; display: block;">
+              </div>
+            </div>
+          </center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>Automated Video Object Eraser Pipeline</strong></papertitle>
+          <br>
+          <a href="https://github.com/HuazeLiu/Automated-Video-Eraser.git">[Code]</a>
+          <p align="justify">A reproducible workflow for removing dynamic objects from videos by integrating YOLO for detection, OSTrack for tracking, SAM2 for segmentation, and DiffuEraser for diffusion-based inpainting. The system ensures temporal consistency and high-quality background restoration.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center><img src='images/TurtleBot.png' alt="TurtleBot Image" width="90%"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>Vision-based Localization and Path Planning TurtleBot System </strong></papertitle>
+          <br>
+          <a href="files/paper/ENGR205.pdf">[Report]</a> /
+          <a href="https://github.com/jesliu-27/e205_project.git">[Code]</a>
+          <p align="justify">Developed a dual-robot system for autonomous emergency response, where an "explorer" robot uses vision-based detection and an EKF/UKF to locate targets and a "rescuer" robot uses the A* algorithm to navigate to them. The framework is validated in the Webots simulator.</p>
+        </td>
+      </tr>
+
+          <!-- Robotics CAD Collection (SolidWorks parts) -->
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center>
+            <video width="90%" autoplay loop muted playsinline controls poster="videos/gripper.mp4" style="border-radius:8px;">
+              <source src="videos/gripper.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>Robotics CAD Collection for low-cost robot platforms — Open-source SolidWorks Parts</strong></papertitle>
+          <br>
+          <a href="https://github.com/HuazeLiu/Robotics_CAD_Collection.git">[Code]</a>
+          <p align="justify">A growing collection of SolidWorks models and assemblies (grippers, robot arms, and more) aimed at enabling
+            affordable, open-source robotic platforms. Future additions planned: small vehicles, mobile manipulators, multi-legged robots, and more.</p>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center><img src='images/DETR.png' alt="DETR image" width="90%"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>Transfer Learning of DETR for Traffic Object Detection </strong></papertitle>
+          <br>
+          <a href="files/paper/CSCI153.pdf">[Report]</a> /
+          <a href="https://github.com/HuazeLiu/A-Comparative-Study-of-DETR-and-YOLO-on-Traffic-Object-Detection.git">[Code]</a>
+          <p align="justify">Fine-tuned DETR (End-to-End Object Detection with Transformers) for traffic object detection task using
+            KITTI object detection dataset, achieving 71.1% mAP with 18.1ms latency.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
+          <center><img src='images/MOBO.jpg' alt="MOBO image" width="90%"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle> <strong>A Multi-Objective Acquisition Function of Bayesian Optimization </strong></papertitle>
+          <br>
+          <a href="files/paper/MOBO.pdf">[Report]</a>
+          <p align="justify"> We developed a Scalarized Upper Confidence Bound function for Bayesian Optimization in hyperparameter tuning.
+            It was tested by benchmarking on SVM and CNN models, reducing latency by 8% at equivalent accuracy compared to standard methods.</p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border-spacing:10px;border-collapse:separate;margin-top:20px;"><tbody>
+      <tr>
+        <td style="width:100%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:left;">
+          <div class="card-title">Skills</div>
+          <!-- Programming Languages -->
+          <div style="margin-bottom:8px;">
+            <strong>Programming Languages</strong>
+            <br>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C/C++</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">MATLAB</span>
+          </div>
+
+          <!-- Software / Tools -->
+          <div style="margin-bottom:8px;">
+            <strong>Software / Tools</strong>
+            <br>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">ROS/ROS2</span>
+            <span class="skill-pill">Visual Studio</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Isaac Sim/Lab/Gym</span>
+            <span class="skill-pill">Mujoco</span>
+            <span class="skill-pill">SolidWorks</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Jupyter</span>
+          </div>
+
+          <!-- Technical Skills -->
+          <div style="margin-bottom:8px;">
+            <strong>Technical Skills</strong>
+            <br>
+            <span class="skill-pill">2D/3D Computer Vision</span>
+            <span class="skill-pill">Sensor Fusion</span>
+            <span class="skill-pill">Autonomous Navigation</span>
+            <span class="skill-pill">Reinforcement Learning</span>
+            <span class="skill-pill">Sim-to-Real Transfer</span>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="width:100%;padding:20px;vertical-align:top;border:1px solid #e0e0e0;border-radius:8px;text-align:left;margin-top:12px;">
+          <div class="card-title">Activities & Awards</div>
+          <p style="font-size:0.95em;color:#333;"><strong>Activities</strong>: Member of Harvey Mudd RoboSub Team (2022-2023)</p>
+          <p style="font-size:0.95em;color:#333;"><strong>Awards</strong>: Dean's List (2022-2025),  $11,000 Shanahan Projects Fund (2024), $3,000 Leeds Student Travel Grant (2025)</p>
         </td>
       </tr>
     </tbody></table>
