@@ -107,11 +107,13 @@
 %-----------PUBLICATIONS-----------
 \section{Publications}
   \resumeSubHeadingListStart
-    \item\small{[C1] Fay, K.*, Shukla, A.*, \textbf{Liu, H.}, Djapri, D., Buynitsky, A., Hansen, N. (2026). \textit{Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand.} 4th RSS Workshop on Dexterous Manipulation, in submission to ICRA 2027 (*equal contribution).}
+    \item\small{[C1] \textbf{Liu, H.}, Wu, Z., Jang, J., Sheng, J., Collins, A., Xie, A., Gu, Z., Zhu, K., Jiang, D., Cai, K., \& Zhao, Y. (2026). \textit{TAPNAV: Humanoid Navigation through Tactile Active Perception.} arXiv:2610.10748, in submission to ICRA 2027.}
     \vspace{2pt}
-    \item\small{[C2] \textbf{Liu, H.*}, Gao, Z.*, Mohanty, A. (2025). \textit{Language-Driven Semantic Change Detection in Urban Maps via Multi-Modal Deep Learning.} The 38th International Technical Meeting of the Satellite Division of the Institute of Navigation (ION GNSS+ 2025), Baltimore (*equal contribution).}
+    \item\small{[C2] Fay, K.*, Shukla, A.*, \textbf{Liu, H.}, Djapri, D., Buynitsky, A., Hansen, N. (2026). \textit{Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand.} 4th RSS Workshop on Dexterous Manipulation (*equal contribution).}
     \vspace{2pt}
-    \item\small{[C3] \textbf{Liu, H.}, \& Mohanty, A. (2025). \textit{Conformal Prediction for Reliable Test-Time Uncertainty in Robotic Vision.} Southern California AI and Robotics Symposium (SCAIR 2025), Pomona.}
+    \item\small{[C3] \textbf{Liu, H.*}, Gao, Z.*, Mohanty, A. (2025). \textit{Language-Driven Semantic Change Detection in Urban Maps via Multi-Modal Deep Learning.} The 38th International Technical Meeting of the Satellite Division of the Institute of Navigation (ION GNSS+ 2025), Baltimore (*equal contribution).}
+    \vspace{2pt}
+    \item\small{[C4] \textbf{Liu, H.}, \& Mohanty, A. (2025). \textit{Conformal Prediction for Reliable Test-Time Uncertainty in Robotic Vision.} Southern California AI and Robotics Symposium (SCAIR 2025), Pomona.}
   \resumeSubHeadingListEnd
 
 %-----------RESEARCH EXPERIENCE-----------
@@ -122,15 +124,15 @@
       {Georgia Institute of Technology}{May 2026 -- Present}
       {Visiting Scholar, advised by Dr. Ye Zhao}{Atlanta, GA}
       \resumeItemListStart
-        \resumeItem{Developing a whole-body tactile sensing system for the Unitree G1 humanoid to enable dense contact-rich perception.}
-        \resumeItem{Designing a diffusion policy for navigation in unseen indoor environments using purely tactile sensing.}
+        \resumeItem{Developed a tactile active-perception controller for vision-denied humanoid navigation.~\textbf{[C1]}}
+        \resumeItem{Developing an agentic humanoid system for long-horizon, contact-rich loco-manipulation that combines whole-body tactile sensing, task planning, and closed-loop control.}
       \resumeItemListEnd
 
     \resumeSubheading
       {University of California, San Diego}{June 2025 -- March 2026}
       {Visiting Summer Scholar, advised by Drs. Hao Su and Michael T. Tolley}{La Jolla, CA}
       \resumeItemListStart
-        \resumeItem{Designed and trained a UniTree G1 upper-body interception policy under hardware torque and safety constraints.~\textbf{[C1]}}
+        \resumeItem{Designed and trained a UniTree G1 upper-body interception policy under hardware torque and safety constraints.~\textbf{[C2]}}
         \resumeItem{Implemented Sim-to-Real transfer using DAgger to deploy a vision-based controller at 50\,Hz.}
       \resumeItemListEnd
 
@@ -138,8 +140,8 @@
       {Harvey Mudd College}{July 2024 -- Dec. 2025}
       {Undergraduate Research Intern, advised by Dr. Adyasha Mohanty}{Claremont, CA}
       \resumeItemListStart
-        \resumeItem{Built a sensor-fusion map anomaly detection pipeline integrating image and LiDAR semantic segmentation.~\textbf{[C2]}}
-        \resumeItem{Evaluated split Conformal Prediction for segmentation and detection using vision foundation models.~\textbf{[C3]}}
+        \resumeItem{Built a sensor-fusion map anomaly detection pipeline integrating image and LiDAR semantic segmentation.~\textbf{[C3]}}
+        \resumeItem{Evaluated split Conformal Prediction for segmentation and detection using vision foundation models.~\textbf{[C4]}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -200,12 +202,6 @@
         \resumeItemListEnd
 
       \resumeProjectHeading
-        {\textbf{Open-source Robotics Platforms CAD Collection} $\,\vert\,$ \emph{SolidWorks} $\,\vert\,$ \href{https://github.com/HuazeLiu/Robotics_CAD_Collection}{\underline{GitHub Repo}}}{2025}
-        \resumeItemListStart
-          \resumeItem{Built SolidWorks models and assemblies aimed at enabling affordable, open-source robotic platforms.}
-        \resumeItemListEnd
-
-      \resumeProjectHeading
         {\textbf{Vision-based Localization \& Path Planning TurtleBot System} $\,\vert\,$ \emph{Python, MATLAB} $\,\vert\,$ \href{https://drive.google.com/file/d/1vnI3-PzYJyxch2ew_fPjdO0ufkhAl3qE/view?usp=sharing}{\underline{Report}}}{2025}
         \resumeItemListStart
           \resumeItem{Developed a vision-based search TurtleBot 4 using EKF and UKF for state estimation and target tracking.}
@@ -245,12 +241,13 @@
      \textbf{Programming Languages}{: Python, C++, SQL, C\#, Java, MATLAB, LaTeX, R} \\
      \textbf{Frameworks / Libraries}{: PyTorch, NumPy, Pandas, OpenCV, Scikit-learn, Hugging Face, Flask} \\
      \textbf{Software / Tools}{: Git, Linux, ROS/ROS2, Isaac Sim/Lab, MuJoCo, SolidWorks, Docker, Jupyter, Visual Studio} \\
-     \textbf{Technical Skills}{: 2D/3D Computer Vision, Deep Learning, Sensor Fusion, Reinforcement Learning, Robotics Control}
+     \textbf{Technical Skills}{: 2D/3D Computer Vision, Deep Learning, Sensor Fusion, Reinforcement Learning, Robotics Control} \\
+     \textbf{Hardware Experience}{: \emph{Robots} -- Franka, TurtleBot, Unitree G1, Booster T1, AgiBot G1; \emph{Tactile Sensors} -- TouchTronix, GelSight, Xela, Daimon}
     }}
  \end{itemize}
 
-%-----------AWARDS-----------
-\section{Awards \& Scholarships}
+%-----------AWARDS & GRANTS-----------
+\section{Awards \& Grants}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       \textbf{Harvey Mudd College Dean's List} \hfill 2022 -- 2026 \\

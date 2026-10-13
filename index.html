@@ -52,7 +52,7 @@
           <name>Huaze Liu 刘铧泽</name>
         </p>
         <p>
-          Hi, I'm Huaze, also go by Patrick. I'm a visiting student at <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> working on humanoid whole-body control and tactile sensing, advised by <a href="https://www.me.gatech.edu/faculty/zhao">Prof. Ye Zhao</a>.
+          Hi, I'm Huaze, also go by Patrick. I'm a visiting student at <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> working on humanoid whole-body loco-manipulation, agentic self-improvement for whole-body control, and tactile sensing, advised by <a href="https://www.me.gatech.edu/faculty/zhao">Prof. Ye Zhao</a>.
         </p>  
         <p>
           Previously, I graduated from <a href="https://www.hmc.edu/">Harvey Mudd College</a> with high distinction, where I worked with <a href="https://scholar.google.com/citations?user=83jl5AwAAAAJ&hl=en">Prof. Adyasha Mohanty</a> on sensor fusion for trustworthy autonomous navigation.
@@ -61,7 +61,7 @@
         
         </p>
         <p>
-          I work on robotics control, dexterous manipulation, and reinforcement learning. Broadly speaking, I'm interested in how systems perceive and acts in the real world robustly.  
+          I'm interested in how tactile feedback can inform a robot's high-level planning to enable whole-body tasks that involve frequent contact or depend on precise contact control.
         </p>
         <p style="text-align:center">
           <a href="mailto:hualiu@hmc.edu">Email</a> &nbsp/&nbsp
@@ -82,11 +82,7 @@
       <tr>
         <td style="padding:0 20px 28px 20px;width:100%;vertical-align:top;">
           <heading style="font-size:1.5em;display:block;text-align:left;margin-bottom:16px;">Research</heading>
-          <p style="margin:0 0 12px 0;">My research focuses on:</p>
-          <ul style="margin:0;padding-left:22px;line-height:1.55;">
-            <li style="margin-bottom:10px;"><strong>Dexterous Manipulation</strong> — integrating model-free learning with physics-based simulation, optimization, and control to solve contact-rich dexterous manipulation efficiently and reliably.</li>
-            <li><strong>Whole-Body Manipulation</strong> — integrating tactile sensing with whole-body control to solve manipulation tasks beyond table-top settings.</li>
-          </ul>
+          <p style="margin:0;line-height:1.55;">My research focuses on contact-aware whole-body loco-manipulation for humanoid robots. Beyond sensing at the hands, I explore how tactile information from the arms, torso, and legs can reveal the robot's physical interactions with its surroundings. I investigate how to integrate these signals into high-level frameworks, including AI agents and vision-language-action (VLA) models, so that task plans account for where and how the body makes contact. I also explore agentic self-improvement through tactile feedback, connecting high-level planning with whole-body control for long-horizon tasks in which contact is essential.</p>
         </td>
       </tr>
     </tbody></table>
@@ -95,6 +91,23 @@
       <tr>
         <td colspan="2" style="padding:8px 20px 24px 20px;vertical-align:middle;text-align:left;">
           <heading style="font-size:1.5em;display:block;">Publications &amp; Preprints</heading>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px 20px 36px 20px;width:40%;vertical-align:middle">
+          <center><img src="images/tapnav-teaser.webp" alt="TAPNAV planned navigation path, tactile probing action, and Unitree G1 deployment in a kitchen" width="90%" style="max-width:320px;border-radius:4px;"></center>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:top">
+          <papertitle><strong>TAPNAV: Humanoid Navigation through Tactile Active Perception</strong></papertitle>
+          <br>
+          <strong>Huaze Liu</strong>, Zhenyu Wu, Jaehwi Jang, Junjie Sheng, Andrew Collins, Aaron Xie, Zhaoyuan Gu, Kaijie Zhu, Ding Jiang, Kevin Cai, Ye Zhao
+          <br>
+          <em>In submission to ICRA 2027</em>
+          <br>
+          <span class="pub-links">
+            <a href="https://tapnav.github.io/TAPNAV-Project/">[Project Page]</a> /
+            <a href="https://arxiv.org/abs/2610.10748">[Paper]</a>
+          </span>
         </td>
       </tr>
       <tr>
@@ -111,7 +124,7 @@
           <br>
           Kehlani Fay*, Arth Shukla*, <strong>Huaze Liu</strong>, Darin Djapri, Alexiy Buynitsky, Nicklas Hansen
           <br>
-          <em>4th RSS Workshop on Dexterous Manipulation</em>
+          <em>4th RSS Workshop on Dexterous Manipulation; in submission to ICRA 2027</em>
           <br>
           <span class="pub-links">
             <a href="https://anonymous-user-conferences.github.io/IROS2026/">[pre-release project page]</a> /
@@ -220,26 +233,6 @@
         </td>
       </tr>
 
-          <!-- Robotics CAD Collection (SolidWorks parts) -->
-      <tr>
-        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
-          <center>
-            <video width="90%" autoplay loop muted playsinline controls poster="videos/gripper.mp4" style="max-width:320px;border-radius:4px;">
-              <source src="videos/gripper.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </center>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:top">
-          <papertitle> <strong>Robotics CAD Collection for low-cost robot platforms — Open-source SolidWorks Parts</strong></papertitle>
-          <br>
-          <a href="https://github.com/HuazeLiu/Robotics_CAD_Collection.git">[Code]</a>
-          <p align="justify">A growing collection of SolidWorks models and assemblies (grippers, robot arms, and more) aimed at enabling
-            affordable, open-source robotic platforms. Future additions planned: small vehicles, mobile manipulators, multi-legged robots, and more.</p>
-        </td>
-      </tr>
-
-
       <tr>
         <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
           <center><img src='images/DETR.png' alt="DETR image" width="90%" style="max-width:320px;border-radius:4px;"></center>
@@ -251,18 +244,6 @@
           <a href="https://github.com/HuazeLiu/A-Comparative-Study-of-DETR-and-YOLO-on-Traffic-Object-Detection.git">[Code]</a>
           <p align="justify">Fine-tuned DETR (End-to-End Object Detection with Transformers) for traffic object detection task using
             KITTI object detection dataset, achieving 71.1% mAP with 18.1ms latency.</p>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding:20px 20px 40px 20px;width:40%;vertical-align:middle">
-          <center><img src='images/MOBO.jpg' alt="MOBO image" width="90%" style="max-width:320px;border-radius:4px;"></center>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:top">
-          <papertitle> <strong>A Multi-Objective Acquisition Function of Bayesian Optimization </strong></papertitle>
-          <br>
-          <a href="files/paper/MOBO.pdf">[Report]</a>
-          <p align="justify"> We developed a Scalarized Upper Confidence Bound function for Bayesian Optimization in hyperparameter tuning.
-            It was tested by benchmarking on SVM and CNN models, reducing latency by 8% at equivalent accuracy compared to standard methods.</p>
         </td>
       </tr>
     </tbody></table>
@@ -277,17 +258,26 @@
         <td style="padding:0 20px 20px 20px;">
           <!-- Programming Languages -->
           <div style="margin-bottom:8px;">
-            <strong>Programming Languages</strong>: Python, C/C++, Java, MATLAB
+            <strong>Programming Languages</strong>: Python, C++, SQL, C#, Java, MATLAB, LaTeX, R
+          </div>
+
+          <div style="margin-bottom:8px;">
+            <strong>Frameworks / Libraries</strong>: PyTorch, NumPy, Pandas, OpenCV, Scikit-learn, Hugging Face, Flask
           </div>
 
           <!-- Software / Tools -->
           <div style="margin-bottom:8px;">
-            <strong>Software / Tools</strong>: Linux, ROS/ROS2, Visual Studio, Git, Isaac Sim/Lab/Gym, Mujoco, SolidWorks, Docker, Jupyter
+            <strong>Software / Tools</strong>: Git, Linux, ROS/ROS2, Isaac Sim/Lab, MuJoCo, SolidWorks, Docker, Jupyter, Visual Studio
           </div>
 
           <!-- Technical Skills -->
           <div style="margin-bottom:8px;">
-            <strong>Technical Skills</strong>: 2D/3D Computer Vision, Sensor Fusion, Autonomous Navigation, Reinforcement Learning, Sim-to-Real Transfer
+            <strong>Technical Skills</strong>: 2D/3D Computer Vision, Deep Learning, Sensor Fusion, Reinforcement Learning, Robotics Control
+          </div>
+
+          <!-- Hardware Experience -->
+          <div style="margin-bottom:8px;">
+            <strong>Hardware Experience</strong>: <em>Robots</em> — Franka, TurtleBot, Unitree G1, Booster T1, AgiBot G1; <em>Tactile Sensors</em> — TouchTronix, GelSight, Xela, Daimon
           </div>
         </td>
       </tr>

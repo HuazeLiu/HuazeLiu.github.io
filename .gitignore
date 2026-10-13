@@ -1,0 +1,11 @@
+# LaTeX build intermediates (keep source and final PDFs).
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Local previews and OS metadata.
+/tmp/
+.DS_Store
