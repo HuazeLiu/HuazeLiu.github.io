@@ -12,6 +12,25 @@
   <style>
     .pub-links a { color: #6a1b9a; }
     .pub-links a:hover { color: #4a148c; }
+    .pub-abstract { margin-top: 12px; }
+    .pub-abstract summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fafafa;
+      cursor: pointer;
+      list-style: none;
+      font-size: 0.9em;
+    }
+    .pub-abstract summary::-webkit-details-marker { display: none; }
+    .pub-abstract summary::after { content: '+'; }
+    .pub-abstract[open] summary::after { content: '−'; }
+    .pub-abstract summary:hover { background: #f0f0f0; }
+    .pub-abstract summary:focus-visible { outline: 2px solid #6a1b9a; outline-offset: 3px; }
+    .pub-abstract p { margin: 12px 0 0; line-height: 1.6; }
     .side-nav {
       position: fixed;
       top: 40px;
@@ -117,6 +136,10 @@
             <a href="https://arxiv.org/abs/2610.10748">[Paper]</a>
           </span>
           <p><strong>TL;DR:</strong> Vision-denied humanoid navigation through active tactile probing and whole-body control.</p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Navigation in vision-denied environments is challenging for humanoid robots because proprioceptive odometry drifts and localization uncertainty accumulates rapidly. We present TAPNAV, a tactile active-perception framework that enables humanoid navigation toward a goal by actively probing surrounding structures without relying on vision. TAPNAV maintains a pose belief from odometry, IMU, and tactile contact observations, and couples uncertainty-aware global route planning with information-gain-driven local probing. The global planner searches for routes that keep predicted localization uncertainty bounded by exploiting opportunities for tactile correction, while the local planner selects probe actions that maximize expected information gain. A whole-body controller coordinates the humanoid's locomotion and end-effector contact to execute the planned navigation and probe motions. We evaluate TAPNAV in simulation and on a Unitree G1 across different floor plans and obstacle geometries. TAPNAV achieves lower state estimation error and a higher task completion rate than baselines. These results demonstrate that actively planning physical interactions with the environment can provide localization cues for reliable humanoid navigation without vision.</p>
+          </details>
         </td>
       </tr>
       <tr>
@@ -140,6 +163,10 @@
             <a href="files/paper/Catch_It_All_ICRA.pdf">[Paper]</a>
           </span>
           <p><strong>TL;DR:</strong> Generalizable egocentric catching, both underhand and overhand.</p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>Catching arbitrary objects requires generalization to novel projectiles and real-time adaptation to unpredictable contact dynamics under noisy visual observations. This paper presents Catch It All!, a sim-to-real catching framework for humanoid robots that generalizes and adapts to unseen objects with variable physical properties for underhand and overhand catches, using only one egocentric camera. We learn policies which generalize to unseen objects with varying geometry, deformability, elasticity, and physical properties. Effective grasps which adapt real-time to object poses and shapes are learned through careful grasp reward design. We provide safety-aware curricula which enable safe, high-frequency action execution near hardware limits, including wrist torque limits as low as 5 N·m. We validate our system by deploying zero-shot on a Unitree G1. With only one egocentric camera, Catch It All! successfully performs underhand and overhand catches on 9 unseen objects not seen during training, including low-rebound plushes, semi-deformable toys and chip bags, and rigid-elastic objects with high rebound on contact.</p>
+          </details>
         </td>
       </tr>
       <tr>
@@ -163,6 +190,11 @@
             <a href="files/slides/ION_GNSS_Slides.pdf">[Slides]</a> /
             <a href="https://github.com/HuazeLiu/Map-Uncertainty-Test">[Code]</a>
           </span>
+          <p><strong>TL;DR:</strong> Detecting urban map changes from vision and LiDAR, with language-driven explanations of map inconsistencies.</p>
+          <details class="pub-abstract">
+            <summary>Abstract</summary>
+            <p>High-integrity maps are essential for safe autonomous navigation in dynamic urban environments, where frequent changes and sensor limitations present significant challenges. This paper introduces a novel, deep-learning-driven framework for continuous map uncertainty monitoring and semantic change detection. Our approach leverages data-driven feature extraction from both vision and LiDAR modalities. A key innovation is the integration of zero-shot semantic segmentation using large pre-trained vision-language models, which provides interpretable, language-driven explanations for detected map inconsistencies. The framework dynamically tracks map consistency using Kullback-Leibler divergence metrics, enabling proactive real-time alerts when deviations occur. By jointly assessing structural and semantic integrity, our approach provides a robust and interpretable mechanism for maintaining high-integrity maps in urban autonomous systems.</p>
+          </details>
         </td>
       </tr>
       <tr>
@@ -177,8 +209,7 @@
           <em>Southern California AI and Robotics Symposium 2025</em>
           <br>
           <span class="pub-links">
-            <a href="files/paper/SCR2025_submission_cp.pdf">[Paper]</a> /
-            <a href="files/paper/ICCV_T2FM.pdf">[Paper (Long version)]</a>
+            <a href="files/paper/ICCV_T2FM.pdf">[Paper]</a>
           </span>
         </td>
       </tr>
